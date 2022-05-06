@@ -1,0 +1,26 @@
+plugins {
+    id 'java'
+}
+
+group 'com.evonsys.automationdemo'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'org.testng:testng:7.4.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
+    testImplementation 'io.github.bonigarcia:webdrivermanager:5.0.0'
+    testImplementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+    testImplementation 'org.seleniumhq.selenium:selenium-chrome-driver:3.141.59'
+    testImplementation 'org.seleniumhq.selenium:selenium-edge-driver:3.141.59'
+    testImplementation 'org.seleniumhq.selenium:selenium-firefox-driver:3.141.59'
+    testImplementation 'org.seleniumhq.selenium:selenium-ie-driver:3.141.59'
+}
+
+test {
+    useTestNG()
+}
